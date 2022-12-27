@@ -1,11 +1,10 @@
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer :- Vallabh Kansagara<vrkansagara@gmail.com> — @vrkansagara "
-" Note       :-
+" Note		 :- VIM Plugin manager
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"Open git file window
-nnoremap <C-g> :GFiles<CR>
-
-" Open file window using fzf
-nnoremap <C-f> :Files<CR>
-
+let g:plug_threads=4
+let g:plug_timeout=15
+let g:plug_retries=3
+let g:plug_window="vertical"
+let g:plug_url_format="https://git::@github.com/%s.git"
